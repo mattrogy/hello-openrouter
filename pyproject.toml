@@ -1,0 +1,21 @@
+[project]
+name = "hello-openrouter"
+version = "0.1.0"
+description = "Ask a Claude model and a Mistral model the same question and compare answers, speed and tokens."
+readme = "README.md"
+authors = [
+    { name = "Matthieu Rogy", email = "330372403+mattrogy@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.48.0",
+    "python-dotenv>=1.2.1",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+hello-openrouter = "hello_openrouter.main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
